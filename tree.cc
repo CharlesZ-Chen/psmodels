@@ -193,5 +193,5 @@ Tree::check_consistency (Node *n)
 int
 Tree::compare (const char *a, Atom *b)
 {
-  return strcmp (a, b->name);
+  return std::strcmp (a, b->name);
 }
