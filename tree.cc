@@ -17,6 +17,7 @@
 // Patrik.Simons@hut.fi
 #include <iostream>
 #include "atomrule.h"
+#include <string.h>
 #include "tree.h"
 
 using namespace std;
@@ -193,5 +194,5 @@ Tree::check_consistency (Node *n)
 int
 Tree::compare (const char *a, Atom *b)
 {
-  return std::strcmp (a, b->name);
+  return strcmp (a, b->name);
 }
